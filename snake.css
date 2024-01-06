@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,html{
+    height: 100vh;
+    width: 100vw;
+    background-image: url('./parliament.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu{
+    position: absolute;
+    left: 5%;
+    font-size: 2rem;
+    top: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  
+}
+
+.menu-item{
+    display: flex;
+    align-items: center;
+}
+
+.game-board{
+    background: rgba(255, 255, 255, 0.1); 
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15); 
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+    width: 100vmin;
+    height: 100vmin;
+    display: grid;
+    grid-template-rows: repeat(21, 1fr);
+    grid-template-columns: repeat(21, 1fr);
+}
+
+.snake-head{
+   
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.snake,.simple-food{
+ 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* border:3px solid black;
+    border-radius: 100%; */
+}
+
