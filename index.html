@@ -7,33 +7,35 @@
     <script type="module" src="./game.js" defer></script>
     <link rel="stylesheet" href="snake.css" />
     <link rel="shortcut icon" href="./snakeIco.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Proza+Libre&family=Vollkorn+SC:wght@700&display=swap" rel="stylesheet">
   </head>
   <body>
     <div class="menu">
-      <div style="background-color: white; backdrop-filter: blur(10px)">
-        Select Game Mode
-      </div>
-      <ul style="list-style: none; font-size: 1.5rem">
-        <li class="menu-item normal-mode">
+     
+      <div style="list-style: none; font-size: 1.5rem">
+        <div data-name="normal" class="menu-item normal-mode">
           <div class="" style="width: 5vw">
             <img src="./snakeHead.jpg" style="height: 7vh" alt="" />
           </div>
           <div>Normal Mode</div>
-        </li>
-        <li class="menu-item modiji-mode ">
+        </div>
+        <div data-name="modi" class="menu-item modiji-mode ">
           <div class="" style="width: 5vw">
             <img src="./modiji.png" style="height: 5vw" alt="" />
           </div>
           <div>Modi Ji Mode</div>
-        </li>
-        <li class="menu-item zen-mode">
+        </div>
+        <div data-name="zen" class="menu-item zen-mode">
           <div class="" style="width: 5vw">
-            <img src="./zenHead.webp" style="height: 5vw" alt="" />
+            <img src="./zenHead.png" style="height: 5vw" alt="" />
           </div>
           <div>Zen Mode</div>
-        </li>
-      </ul>
+        </div>
+      </div>
     </div>
     <div class="game-board"></div>
+    
   </body>
 </html>
